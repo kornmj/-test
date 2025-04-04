@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        text-align: center;
+        margin-top: 50px;
+        }
+    div {
+        display: inline-block;
+        background-color: black;
+        color: white;
+        padding: 20px;
+        border-radius: 10px;
+        }
+</style>
+<body>
+    <div id="result"></div>
+    <script>
+        function main() {
+            let b = parseInt(prompt("กรุณากรอกแม่สูตรคูณ: "), 10);
+            let output = " ";
+            for (let i = 1; i <= 12; i++){
+                output += `${b} x ${i} = ${b * i}<br>`;
+            }
+            document.getElementById("result").innerHTML = output;
+        }
+        main();
+    </script>
+</body>
+</html>
